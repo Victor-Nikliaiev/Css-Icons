@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(17, 17, 17);
+}
+.icon {
+    color: #f1f1f1;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 15px;
+    height: 30px;
+    border-left: 4px solid currentColor;
+    border-right: 4px solid currentColor;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 30px;
+        left: -4px;
+        background-color: currentColor;
+        transform-origin: left top;
+        transform: skewX(32.5deg);
+    }
+}

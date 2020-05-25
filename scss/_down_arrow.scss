@@ -1,0 +1,27 @@
+body {
+    background-color: #1f1f1f;   
+}
+
+.icon {
+    position: absolute;
+    color: #f1f1f1;
+    width: 1px;
+    height: 16px;
+    background-color: currentColor;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid currentColor;
+        border-bottom: 1px solid currentColor;
+        transform: rotate(45deg);
+        left: -5px;
+        top: 3px;
+
+        
+    }
+
+    
+}

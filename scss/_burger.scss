@@ -1,0 +1,37 @@
+// You can easialy controll the size and color of your burger menu. 
+$width-of-line: 36px;
+$space-between: 10px;
+$color: rgb(29, 27, 27);
+$height-of-line: 2px;
+$shadow: 2px 2px 4px rgb(128, 0, 60);
+
+.icon {
+    color: $color;
+    position: absolute;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: $width-of-line;
+    height: $height-of-line;
+    background-color: currentColor;
+    box-shadow: $shadow;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: -$space-between;
+        width: $width-of-line;
+        height: $height-of-line;
+        background-color: currentColor;
+        box-shadow: $shadow;
+    } 
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: $space-between;
+        width: $width-of-line;
+        height: $height-of-line;
+        background-color: currentColor;
+        box-shadow: $shadow;
+    }
+}

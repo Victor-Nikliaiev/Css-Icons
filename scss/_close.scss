@@ -1,0 +1,49 @@
+.box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+    margin: auto auto;
+    background-color: rgb(224, 91, 91);
+}
+span {
+    margin: 15px 0 0 20px;
+}
+.icon {   
+    display: inline;
+    position: relative;
+    margin: 10px;
+    
+   
+    // width: 21px;
+    // height: 21px;
+    color: forestgreen;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 1px;
+        background: currentColor;
+        transform: rotate(45deg);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 21px;
+        height: 1px;
+        background: currentColor;
+        transform: rotate(-45deg);
+    }
+
+    i {
+        position: absolute;
+        top: -12px; 
+        left: -2px;
+        width: 21px;
+        height: 21px;
+        border: 3px double currentColor;
+    }
+}

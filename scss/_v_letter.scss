@@ -1,0 +1,33 @@
+body {
+    background: #1f1f1f;
+
+}
+
+.icon {
+    left: 10%;
+    color: #f1f1f1;
+    position: absolute;
+    width: 4px;
+    height: 30px;
+    
+
+    &:before {  
+        content: "";      
+        position: absolute;
+        background: currentColor;
+        transform-origin: bottom left;
+        transform: skewX(20deg);
+        width: 4px;
+        height: 30px;
+    }
+
+    &:after {  
+        content: "";   
+        position: absolute;
+        background: currentColor;
+        transform-origin: bottom left;
+        transform: skewX(-20deg);
+        width: 4px;
+        height: 30px;
+    }
+}

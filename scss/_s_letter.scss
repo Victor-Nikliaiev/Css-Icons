@@ -1,0 +1,36 @@
+.icon {
+    color: #111;
+    width: 18px;
+    height: 30px;
+    position: absolute;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 1px;
+        top: 0;        
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border-top: 4px solid currentColor;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid currentColor;
+        border-left: 4px solid currentColor;
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;        
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border-top: 4px solid currentColor;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid currentColor;
+        border-left: 4px solid currentColor;
+        transform: rotate(225deg);
+    }
+}
