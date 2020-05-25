@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,aAAa,EAAE,GAAG;EAClB,UAAU,EAAE,sBAAsB;EAClC,YAAY,EAAE,qBAAqB;EACnC,aAAa,EAAE,sBAAsB;EACrC,WAAW,EAAE,sBAAsB;CACtC",
+    "sources": [
+        "../../scss/main.scss",
+        "../../scss/_c_letter.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

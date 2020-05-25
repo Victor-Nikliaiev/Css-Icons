@@ -1,0 +1,46 @@
+.icon {
+    width: 12px;
+    height: 12px;
+    color: #111;
+    position: absolute;
+    margin: 12px 0 0 12px;
+    border: 1px solid currentColor;
+    transform: rotate(-45deg);
+    border-radius: 100%;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 6px;
+        color: #111;
+        background-color: currentColor;
+        left: 5px;
+        top: 12px;
+    }
+
+    i {        
+        color: #111;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        transform: rotate(45deg);
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 1px;
+            background-color: currentColor;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 1px;
+            background-color: currentColor;
+            transform: rotate(90deg);
+        }
+    }
+}

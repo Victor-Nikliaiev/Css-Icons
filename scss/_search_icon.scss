@@ -1,0 +1,24 @@
+$size: 12px;
+
+.icon {
+    margin-top: 2px;
+    margin-left: 3px;
+    color: #000;
+    width: $size;
+    height: $size;
+    border: solid 1px currentColor;
+    position: absolute;
+    border-radius: 100%;
+    transform: rotate(-45deg);
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 6px;
+        background-color: currentColor;
+        left: 5px;
+        top: $size;
+
+    }
+}
